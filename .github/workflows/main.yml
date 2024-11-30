@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Testing GitHub Action'
-        uses: pwd
+        run: pwd
 
       - name: 'Testing Printing'
         run: echo Hamza
