@@ -1,6 +1,6 @@
-name: Test Workflow
+name: CI Build
 
-on:
+on: 
   push:
     branches:
       - master
@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Checkout repository'
-        run: pwd
-      - name: 'Testing Printing'
-        run: echo Hamza
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Testing Printing
+        run: echo "Hamza"
