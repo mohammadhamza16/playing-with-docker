@@ -1,5 +1,5 @@
 FROM openjdk
-WORKDIR hamza.java
+WORKDIR /app
 COPY hamza.java .
 RUN javac hamza.java
 CMD ["java", "hamza"]
