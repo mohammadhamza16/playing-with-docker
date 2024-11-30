@@ -1,4 +1,3 @@
-name: CI
 on:
   push:
     branches:
@@ -10,6 +9,5 @@ jobs:
     steps:
       - name: 'Testing GitHub Action'
         run: pwd
-
       - name: 'Testing Printing'
-        run: echo Hamza
+        run: echo Hamza 
