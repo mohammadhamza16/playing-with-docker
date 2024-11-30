@@ -1,19 +1,17 @@
+name: Test Workflow
+
 on:
   push:
     branches:
       - master
-
-
-
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github actions'
-        run: pwd
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: 'Testing Printing'
-        run: echo Ahmad
+      - name: 'Testing GitHub Actions'
+        run: pwd
